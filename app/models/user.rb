@@ -12,4 +12,6 @@ class User < ActiveRecord::Base
          :omniauthable
 
   include DeviseTokenAuth::Concerns::User
+
+  has_many :tickets
 end
